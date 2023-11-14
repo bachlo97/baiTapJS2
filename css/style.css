@@ -1,0 +1,106 @@
+body {
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+}
+
+.container .row {
+    align-items: center;
+    height: 100vh;
+}
+
+.container .row a {
+    border: 1px solid linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    transform-origin: center;
+    perspective: 1000px;
+    border-radius: 8px;
+    height: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    transition: all 1.5s;
+    color: blue;
+    overflow: hidden;
+}
+
+.container .row a:nth-child(2) i{
+    margin-right: 7px;
+    color:#ffa42cc7;
+}
+
+.container .row a:nth-child(4) i{
+    margin-right: 7px;
+    color:#53c45c;
+}
+
+
+.container .row a:nth-child(2),
+.container .row a:nth-child(4) {
+    transform: translateY(-20px);
+}
+
+.container .row a:nth-child(2):hover,
+.container .row a:nth-child(4):hover {
+    transform: translateY(-20px) rotateY(180deg);
+}
+
+.container .row a:hover {
+    transform: rotateY(180deg);
+}
+
+.container .row a h3{
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+    transition: all 1s;
+}
+.container .row a:hover h3 {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0s;
+}
+
+
+
+.container .row a p {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transition: all 0s;
+}
+
+.container .row a:hover p {
+    transform: translate(-50%, -50%) rotateY(180deg);
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s;
+    /* Đặt lại transform khi hover */
+}
+
+.modal-content {
+    height: 60vh;
+    transform: translateY(25%);
+}
+
+#bai1 .modal-body input{
+    outline: none;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: #52ACFF;
+    color: crimson;
+}
+
+#bai1 .modal-body button{
+    border-radius: 0;
+    border-color: red;
+    background-color: #52ACFF;
+    color: white;
+    width: 40%;
+}
+
